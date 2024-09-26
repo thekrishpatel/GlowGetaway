@@ -1,0 +1,91 @@
+/* AboutUs.css */
+
+.about-us {
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  padding: 40px;
+  max-width: 900px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.about-us p {
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+/* Centered Team Section */
+.team-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.team-section h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center; /* Centers the grid items horizontally */
+  margin-top: 20px;
+}
+
+.team-member {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.team-member:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.team-member h3 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.team-member a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.team-member a:hover {
+  color: #2980b9;
+}
+
+.team-member p {
+  margin: 5px 0;
+  color: #777;
+  font-size: 1rem;
+}
+
+.team-member p.phone {
+  font-weight: bold;
+  color: #2c3e50;
+}

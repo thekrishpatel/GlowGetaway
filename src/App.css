@@ -1,0 +1,159 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  padding-top: 70px; /* Adjust padding for fixed navbar */
+}
+  
+
+/* Fixed Top Navbar */
+.navbar-light {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e3e6e8;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #333;
+}
+
+.navbar-light .navbar-brand {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.navbar-dark {
+  background-color: #343a40;
+}
+
+.navbar-dark .nav-link {
+  color: #fff;
+}
+
+/* Centering Sub-Navbar Items */
+.navbar-dark .navbar-nav {
+  justify-content: center;
+  width: 100%;
+}
+
+/* Center-Aligned Links */
+.container .row div a {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.container .row div a:hover {
+  text-decoration: underline;
+}
+
+/* Cards Styling */
+.card {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+.card .card-title {
+  font-weight: bold;
+}
+
+.card .btn {
+  background-color: #007bff;
+  border: none;
+}
+
+.card .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Carousel Styling */
+.carousel-item img {
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.carousel-caption h5 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer .list-inline {
+  padding: 0;
+}
+
+footer .list-inline-item {
+  margin: 0 10px;
+}
+
+footer .list-inline-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .list-inline-item a:hover {
+  text-decoration: underline;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+}

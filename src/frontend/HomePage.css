@@ -1,0 +1,392 @@
+/* General reset and styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-left: 2rem;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #2c3e50;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    /* background-image: url(''); Replace with actual path */
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.cta-btn {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #e67e22;
+}
+
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-img-top {
+    height: 250px; /* Adjust height as needed */
+    object-fit: cover;
+  }
+  
+  .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .btn-primary {
+    margin-top: 10px;
+  }
+
+  
+  /* Carousel Image */
+.carousel-inner img {
+    height: 500px !important; /* Set a consistent height */
+    object-fit: cover !important; /* Ensure no image distortion */
+  }
+  
+  /* Carousel Caption */
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5) !important; /* Semi-transparent background */
+    padding: 1.5rem !important;
+    border-radius: 10px !important;
+    transition: background 0.3s ease, transform 0.3s ease !important;
+  }
+  
+  .carousel-caption h5 {
+    font-size: 2rem !important;
+    font-weight: bold !important;
+    color: #f39c12 !important; /* Warm color */
+    margin-bottom: 1rem !important;
+    transition: color 0.3s ease !important;
+  }
+  
+  .carousel-caption p {
+    font-size: 1.25rem !important;
+    color: #ffffff !important;
+    transition: color 0.3s ease !important;
+  }
+  
+  /* Hover Effects for Carousel */
+  .carousel-item:hover .carousel-caption {
+    background: rgba(0, 0, 0, 0.8) !important; /* Darker background */
+    transform: scale(1.05) !important; /* Slightly enlarge */
+  }
+  
+  .carousel-caption h5:hover {
+    color: #e67e22 !important; /* Change color */
+  }
+  
+  .carousel-caption p:hover {
+    color: #ddd !important; /* Lighten text */
+  }
+
+  /* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  font-family: 'Poppins', sans-serif; /* Stylish, modern font */
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+/* Card Styling */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Slight upward hover effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Elevated shadow */
+}
+
+.card-img-top {
+  border-radius: 10px 10px 0 0;
+  height: 250px;
+  object-fit: cover; /* Ensures the image scales well */
+}
+
+/* Card Body */
+.card-body {
+  padding: 1.5rem;
+  font-family: 'Roboto', sans-serif; /* Clean, modern font */
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #34495e;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.card-title:hover {
+  color: #3498db; /* Blue highlight on hover */
+}
+
+.card-text {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  margin-bottom: 1.5rem;
+}
+
+/* Learn More Button */
+.btn-primary {
+  background-color: #3498db;
+  border-color: #3498db;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Slight shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 200px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
+}
+
+
+/* App.css or relevant CSS file */
+
+.carousel-section {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .carousel-item img {
+    max-height: 500px; /* Adjust as needed */
+    object-fit: cover;
+  }
+  
+  .carousel-caption {
+    bottom: 20%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  
+  .carousel-caption h5 {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+  }
+  
+  .carousel-caption p {
+    font-size: 1.25rem;
+    font-family: 'Roboto', sans-serif;
+    color: #ddd;
+  }
+  
+  /* App.css or relevant CSS file */
+
+/* Hero Section */
+.hero {
+    background-image: url('/public/images/Hotel/Hotel1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out; /* 1 second fade-in animation */
+    opacity: 0; /* Initial state */
+    animation-fill-mode: forwards; /* Keep the final state of the animation */
+}
+
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.hero-content h1 {
+    font-size: 3rem; /* Adjust size for better readability */
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.25rem; /* Adjust size as needed */
+    margin-bottom: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.cta-btn {
+    background-color: #f39c12; /* Primary button color */
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #e67e22; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Links Section */
+.links-section {
+    padding: 3rem 0;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.link-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.link-item {
+    display: block;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 500;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.link-item:hover,
+.link-item:focus {
+    color: #fff;
+    background-color: #007bff; /* Change to your preferred hover color */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.link-item::after {
+    content: '\2192'; /* Right arrow icon */
+    font-size: 1.2rem;
+    display: block;
+    margin-top: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.link-item:hover::after,
+.link-item:focus::after {
+    transform: translateX(5px);
+}

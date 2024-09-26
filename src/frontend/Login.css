@@ -1,0 +1,146 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3); /* Gradient background */
+    padding: 0 10px; /* Add padding for small screens */
+    /* background-image: url('/images/I.jpg'); */
+}
+
+.login-box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 500px; /* Adjusted to match signup box */
+    width: 100%;
+    margin: 0 auto; /* Center align the box */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.login-box h2 {
+    margin-bottom: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.input-group label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+    transition: 0.3s ease;
+    pointer-events: none; /* Prevent interaction with label */
+    transform: translateY(15px); /* Adjust to fit within input */
+    background: #fff; /* Background for better visibility */
+    padding: 0 0.25rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    background: white; /* Slightly different background for input */
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+    transform: translateY(-15px); /* Move label up */
+    font-size: 0.75rem;
+    color: #007bff;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    margin-bottom: 0.75rem; /* Adjusted margin */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Added for text alignment */
+    overflow: hidden; /* Added to ensure background covers the entire button */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.btn-primary {
+    background: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.btn-google {
+    background: #fff;
+    color: #333;
+    border: 1px solid #ddd; /* Border to match design */
+}
+
+.btn-google img {
+    width: 30px; /* Adjust size of Google logo */
+    height: 30px; /* Ensure the height matches the width for a square logo */
+    margin-right: 0.5rem; /* Space between logo and text */
+}
+
+.btn-google span {
+    font-size: 0.9rem;
+}
+
+.btn-google:hover {
+    background: #f1f3f4;
+    border-color: #ccc; /* Change border color on hover */
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.btn-signup {
+    background: #28a745;
+    color: #fff;
+    border: 1px solid #218838; /* Border to match design */
+}
+
+.btn-signup:hover {
+    background: #218838;
+    border-color: #1e7e34; /* Darker border color on hover */
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.divider {
+    text-align: center;
+    margin: 1rem 0;
+    font-family: 'Roboto', sans-serif;
+    color: #888;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .login-box {
+        padding: 1.5rem;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    .input-group {
+        margin-bottom: 0.75rem;
+    }
+    
+    .btn {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,86 @@
+/* Profile Page Styling */
+.profile-container {
+    width: 100%; /* Expands the container to full width */
+    max-width: 1200px; /* Maximum width for content readability */
+    margin: 50px auto;
+    padding: 30px 20px; /* Increased padding to give some space on both sides */
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 150px;
+}
+
+.profile-container h1 {
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: #222;
+    font-weight: 600;
+}
+
+.profile-details {
+    text-align: left;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Aligns items vertically */
+    align-items: center; /* Centers the content horizontally */
+}
+
+.profile-details p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #444;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 8px;
+    width: 100%; /* Ensures paragraphs take full width for consistency */
+}
+
+.profile-details p strong {
+    color: #333;
+}
+
+.logout-button {
+    margin-top: 30px;
+    padding: 14px 28px;
+    background-color: #e63946;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    box-shadow: 0px 4px 10px rgba(230, 57, 70, 0.3);
+    align-self: center; /* Centers the button horizontally */
+}
+
+.logout-button:hover {
+    background-color: #d62839;
+    transform: translateY(-2px);
+}
+
+.logout-button:active {
+    background-color: #c81d34;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .profile-details p {
+        font-size: 16px;
+    }
+
+    .logout-button {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+}

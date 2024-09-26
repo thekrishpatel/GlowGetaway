@@ -1,0 +1,172 @@
+/* Add fade-down animation */
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); /* Moves the navbar up initially */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Moves the navbar back to its normal position */
+  }
+}
+
+/* Apply the animation to the navbar */
+.navbar {
+    animation: fadeDown 1s ease-in-out; /* Applies the fade down effect over 1 second */
+    background-color: #ffffff; /* Clean white background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Stronger shadow for separation */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Change navbar background and shadow on scroll */
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow */
+}
+
+.navbar-brand {
+    font-weight: 900;
+    color: #007bff;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #0056b3;
+    text-shadow: 0 2px 8px rgba(0, 123, 255, 0.4); /* Add subtle shadow on hover */
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+    padding: 10px 20px;
+    margin: 0 8px;
+    text-transform: uppercase; /* Make the text appear more modern */
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 50px; /* Give it a more button-like appearance */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Advanced hover effect: Slide in gradient background and slight scale up */
+.navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #007bff, #00c6ff); /* Gradient effect */
+    transition: left 0.4s ease-in-out;
+    z-index: -1;
+}
+
+.navbar-nav .nav-link:hover::before {
+    left: 0; /* Slide in the gradient from left to right */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffffff !important;
+    transform: translateY(-2px); /* Subtle upward movement */
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3); /* Add box shadow */
+}
+
+.navbar-nav .nav-link.active {
+    background: linear-gradient(135deg, #0056b3, #007bff); /* Gradient for active link */
+    color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3); /* Add shadow to active link */
+    border-radius: 50px;
+}
+
+/* Navbar Toggler (Mobile) */
+.navbar-toggler {
+    border: none;
+    background: transparent;
+}
+
+.navbar-toggler-icon {
+    width: 30px;
+    height: 30px;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 123, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-dropdown-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 8px;
+    padding: 10px 0;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.profile-dropdown-menu .dropdown-item {
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.profile-dropdown-menu .dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+.profile-dropdown-menu .dropdown-divider {
+    height: 1px;
+    margin: 8px 0;
+    background-color: #e9ecef;
+}
+
+/* Mobile Responsiveness for Navbar */
+@media (max-width: 767.98px) {
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.95); /* Add background for mobile menu */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1.2rem;
+        padding: 15px 20px;
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+        border-radius: 12px;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 123, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+}
