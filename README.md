@@ -1,4 +1,3 @@
-```markdown
 # GlowGetaway
 
 GlowGetaway is a travel planning application that allows users to explore various destinations, find hotels, and plan their trips. The app features a user-friendly interface, vibrant visuals, and robust backend support for managing user data and hotel listings.
