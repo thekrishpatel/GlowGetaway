@@ -96,16 +96,3 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 
 This project is licensed under the MIT License. See the LICENSE file for more information.
 ```
-
-### Instructions
-
-1. **Create the File:**
-   - In your `GlowGetaway` directory, create a file named `README.md`.
-
-2. **Add Content:**
-   - Copy and paste the provided content into the `README.md` file.
-
-3. **Customize:**
-   - Make sure to replace the placeholder URL in the cloning instructions and any other project-specific details that might be needed.
-
-This `README.md` provides a clear overview of your project and will help users understand how to set up and use your application.
